@@ -26,12 +26,18 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
     </head>
-    <body>
+    <body ng-app="phoneGapApp">
         <h1> Welcome to the App! </h1>
-        <button onclick="app.button()"> Click me</button>
+        <ng-view></ng-view>
 
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/angular-route/angular-route.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/FirstCtrl.js"></script>
+        <script type="text/javascript" src="js/SecondCtrl.js"></script>
+        <script type="text/javascript" src="js/ThirdCtrl.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
