@@ -17,6 +17,10 @@
  * under the License.
  */
 var app = {
+
+    button: function(){
+      alert("You clicked me");
+    },
     // Application Constructor
     initialize: function() {
         this.bindEvents();
