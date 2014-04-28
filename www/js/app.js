@@ -2,16 +2,13 @@ angular.module('phoneGapApp', ['ngRoute'])
     .config(function ($routeProvider){
         $routeProvider
             .when('/first', {
-                templateUrl: 'views/first.html',
-                controller: 'FirstCtrl'
+                templateUrl: 'views/first.html'
             })
             .when('/second', {
-                templateUrl: 'views/second.html',
-                controller: 'SecondCtrl'
+                templateUrl: 'views/second.html'
             })
             .when('/third', {
-                templateUrl: 'views/third.html',
-                controller: 'ThirdCtrl'
+                templateUrl: 'views/third.html'
             })
             .otherwise({
                 redirectTo: '/first'
